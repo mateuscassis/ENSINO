@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="164.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifsp.application.controller.CreditosUI">
+   <children>
+      <Button fx:id="btnSalvar" layoutX="531.0" layoutY="116.0" mnemonicParsing="false" onAction="#btnSalvar" prefHeight="25.0" prefWidth="55.0" text="Salvar" />
+      <Button fx:id="btnCancelar" layoutX="460.0" layoutY="116.0" mnemonicParsing="false" onAction="#btnCancelar" text="Cancelar" />
+      <TextField fx:id="txtNome" layoutX="58.0" layoutY="14.0" prefHeight="25.0" prefWidth="531.0" />
+      <Label layoutX="14.0" layoutY="18.0" text="Nome:" />
+      <Label layoutX="14.0" layoutY="62.0" text="Valor:" />
+      <TextField fx:id="txtValor" layoutX="58.0" layoutY="58.0" prefHeight="25.0" prefWidth="531.0" />
+   </children>
+</AnchorPane>

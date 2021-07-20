@@ -14,22 +14,22 @@ import br.edu.ifsp.domain.usecases.servicos.*;
 
 public class Main {
 
-    private static CreateAlunoUseCases createAlunoUseCases;
+    public static CreateAlunoUseCases createAlunoUseCases;
     private static DeleteAlunoUseCases deleteAlunoUseCases;
     private static FindAlunoUseCases findAlunoUseCases;
-    private static UpdateAlunoUseCase updateAlunoUseCase;
+    public static UpdateAlunoUseCase updateAlunoUseCase;
     private static AddCreditosInAluno addCreditosInAluno;
     private static RemoveCreditsForAluno removeCreditsForAluno;
 
-    private static CreateCreditsUseCases createCreditsUseCases;
-    private static DeleteCreditsUseCases deleteCreditsUseCases;
-    private static FindCreditsUseCases findCreditsUseCases;
-    private static UpdateCreditsUseCase updateCreditsUseCase;
+    public static CreateCreditsUseCases createCreditsUseCases;
+    public static DeleteCreditsUseCases deleteCreditsUseCases;
+    public static FindCreditsUseCases findCreditsUseCases;
+    public static UpdateCreditsUseCase updateCreditsUseCase;
 
-    private static CreateServicesUseCases createServicesUseCases;
+    public static CreateServicesUseCases createServicesUseCases;
     private static DeleteServicesUseCase deleteServicesUseCase;
     private static FindServicesUseCases findServicesUseCases;
-    private static UpdateServiceUseCase updateServiceUseCase;
+    public static UpdateServiceUseCase updateServiceUseCase;
 
     public static void main(String[] args) {
         configureInjection();
@@ -72,8 +72,6 @@ public class Main {
         Services services1 = new Services("engenharia", 100, 1);
         createServicesUseCases.insert(services1);
         System.out.println(findServicesUseCases.findOne(1));
-
-
     }
 
     private static void configureInjection() {

@@ -4,6 +4,9 @@ public class Basic extends Aluno {
     private float mensalidade;
     private static Integer idBasic = 2;
 
+    public Basic() {
+    }
+
     public Basic(String nome, float mensalidade) {
         super(nome);
         this.mensalidade = mensalidade;

@@ -13,6 +13,7 @@ public class FindCreditsUseCases {
         this.creditsDAO = creditsDAO;
     }
 
+
     public Optional<Credits> findOne(Integer id){
         if (id == null)
             throw new IllegalArgumentException("Id can not be null ");
