@@ -1,13 +1,19 @@
 package br.edu.ifsp.application.controller;
 
+import br.edu.ifsp.application.view.App;
 import javafx.event.ActionEvent;
 import javafx.scene.control.TableColumn;
 
+import java.io.IOException;
+
 public class ServicosManagementeUI {
-    public void btnSalvar(ActionEvent actionEvent) {
+
+    public void btnNovo(ActionEvent actionEvent) throws IOException {
+        App.setRoot("ServicosUI");
     }
 
-    public void btnVoltar(ActionEvent actionEvent) {
+    public void btnVoltar(ActionEvent actionEvent) throws IOException {
+        App.setRoot("TelaInicialUI");
     }
 
     public void btnDeletarServico(ActionEvent actionEvent) {

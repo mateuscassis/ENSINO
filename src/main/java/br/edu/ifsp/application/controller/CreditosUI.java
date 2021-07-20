@@ -30,10 +30,11 @@ public class CreditosUI {
 
     public void btnSalvar(ActionEvent actionEvent) throws IOException {
         getEntityToView();
+
         if (credits.getId() == null) {
             createCreditsUseCases.insert(credits);
         } else {
-            updateCreditsUseCase.update(credits);
+           updateCreditsUseCase.update(credits);
         }
         App.setRoot("CreditsManagementeUI");
     }
@@ -44,6 +45,7 @@ public class CreditosUI {
         }
         credits.setNome(txtNome.getText());
         credits.setValor(Integer.valueOf(txtValor.getText()));
+
     }
 
     public void btnCancelar(ActionEvent actionEvent) throws IOException {
