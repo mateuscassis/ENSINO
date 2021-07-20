@@ -6,7 +6,9 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.*;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.io.IOException;
@@ -35,7 +37,7 @@ public class CreditsManagementeUI {
     private void initialize() {
         bindTableViewToItemsList();
         bindColumnsToValueSource();
-        loadDataAndShow();
+       // loadDataAndShow();
     }
 
     private void bindTableViewToItemsList() {
@@ -50,9 +52,9 @@ public class CreditsManagementeUI {
     }
 
     private void loadDataAndShow() {
-        List<Credits> participantList = findCreditsUseCases.findAll();
+        List<Credits> credits = findCreditsUseCases.findAll();
         tableData.clear();
-        tableData.addAll(participantList);
+        tableData.addAll(credits);
     }
 
 

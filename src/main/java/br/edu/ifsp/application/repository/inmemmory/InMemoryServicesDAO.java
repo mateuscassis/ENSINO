@@ -1,4 +1,4 @@
-package br.edu.ifsp.application.repository;
+package br.edu.ifsp.application.repository.inmemmory;
 
 import br.edu.ifsp.domain.entities.servicos.Services;
 import br.edu.ifsp.domain.usecases.servicos.ServicesDAO;

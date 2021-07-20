@@ -1,4 +1,4 @@
-package br.edu.ifsp.application.repository;
+package br.edu.ifsp.application.repository.inmemmory;
 
 
 import br.edu.ifsp.domain.entities.creditos.Credits;

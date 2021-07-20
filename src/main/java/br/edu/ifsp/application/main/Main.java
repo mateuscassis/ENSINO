@@ -1,8 +1,8 @@
 package br.edu.ifsp.application.main;
 
-import br.edu.ifsp.application.repository.InMemoryAlunoDAO;
-import br.edu.ifsp.application.repository.InMemoryCreditsDAO;
-import br.edu.ifsp.application.repository.InMemoryServicesDAO;
+import br.edu.ifsp.application.repository.inmemmory.InMemoryAlunoDAO;
+import br.edu.ifsp.application.repository.inmemmory.InMemoryCreditsDAO;
+import br.edu.ifsp.application.repository.inmemmory.InMemoryServicesDAO;
 import br.edu.ifsp.domain.entities.aluno.Aluno;
 import br.edu.ifsp.domain.entities.aluno.Basic;
 import br.edu.ifsp.domain.entities.aluno.Superior;
