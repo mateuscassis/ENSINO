@@ -3,7 +3,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="165.0" prefWidth="505.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifsp.application.controller.AlunoMedioUIController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifsp.application.controller.AlunoMedioUIController">
    <children>
       <Button fx:id="btnSalvar" layoutX="443.0" layoutY="120.0" mnemonicParsing="false" onAction="#btnSalvar" text="Salvar" />
       <Button fx:id="btnCancelar" layoutX="375.0" layoutY="120.0" mnemonicParsing="false" onAction="#btnCancelar" text="Cancelar" />
