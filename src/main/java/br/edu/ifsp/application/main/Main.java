@@ -72,6 +72,7 @@ public class Main {
         Services services1 = new Services("engenharia", 100, 1);
         createServicesUseCases.insert(services1);
         System.out.println(findServicesUseCases.findOne(1));
+
     }
 
     private static void configureInjection() {

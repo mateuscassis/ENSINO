@@ -3,11 +3,11 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="202.0" prefWidth="527.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifsp.application.controller.TelaInicialUI">
+<AnchorPane prefHeight="202.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifsp.application.controller.TelaInicialUI">
    <children>
-      <Button fx:id="telaCreditos" layoutX="10.0" layoutY="115.0" mnemonicParsing="false" onAction="#creditos" prefHeight="69.0" prefWidth="239.0" text="Créditos" />
-      <Button fx:id="telaServicos" layoutX="268.0" layoutY="115.0" mnemonicParsing="false" onAction="#servicos" prefHeight="69.0" prefWidth="245.0" text="Serviços" />
-      <Button fx:id="telaSuperior" layoutX="7.0" layoutY="14.0" mnemonicParsing="false" onAction="#superior" prefHeight="69.0" prefWidth="239.0" text="Aluno Superio" />
-      <Button fx:id="telaMedio" layoutX="268.0" layoutY="14.0" mnemonicParsing="false" onAction="#medio" prefHeight="69.0" prefWidth="245.0" text="Aluno Medio" />
+      <Button fx:id="telaCreditos" layoutX="60.0" layoutY="115.0" mnemonicParsing="false" onAction="#creditos" prefHeight="69.0" prefWidth="239.0" text="Créditos" />
+      <Button fx:id="telaServicos" layoutX="320.0" layoutY="115.0" mnemonicParsing="false" onAction="#servicos" prefHeight="69.0" prefWidth="245.0" text="Serviços" />
+      <Button fx:id="telaSuperior" layoutX="60.0" layoutY="14.0" mnemonicParsing="false" onAction="#superior" prefHeight="69.0" prefWidth="239.0" text="Aluno Superior" />
+      <Button fx:id="telaMedio" layoutX="320.0" layoutY="14.0" mnemonicParsing="false" onAction="#medio" prefHeight="69.0" prefWidth="245.0" text="Aluno Medio" />
    </children>
 </AnchorPane>
