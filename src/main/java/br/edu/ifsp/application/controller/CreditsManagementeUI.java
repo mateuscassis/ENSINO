@@ -37,7 +37,7 @@ public class CreditsManagementeUI {
     private void initialize() {
         bindTableViewToItemsList();
         bindColumnsToValueSource();
-       // loadDataAndShow();
+        loadDataAndShow();
     }
 
     private void bindTableViewToItemsList() {
@@ -52,9 +52,10 @@ public class CreditsManagementeUI {
     }
 
     private void loadDataAndShow() {
-        List<Credits> credits = findCreditsUseCases.findAll();
-        tableData.clear();
-        tableData.addAll(credits);
+         List<Credits> credits = findCreditsUseCases.findAll();
+         tableData.clear();
+         tableData.addAll(credits);
+
     }
 
 

@@ -3,6 +3,7 @@ package br.edu.ifsp.application.main;
 import br.edu.ifsp.application.repository.inmemmory.InMemoryAlunoDAO;
 import br.edu.ifsp.application.repository.inmemmory.InMemoryCreditsDAO;
 import br.edu.ifsp.application.repository.inmemmory.InMemoryServicesDAO;
+import br.edu.ifsp.application.view.App;
 import br.edu.ifsp.domain.entities.aluno.Aluno;
 import br.edu.ifsp.domain.entities.aluno.Basic;
 import br.edu.ifsp.domain.entities.aluno.Superior;
@@ -33,7 +34,7 @@ public class Main {
 
     public static void main(String[] args) {
         configureInjection();
-
+        App.main(args);
         //Criando Alunos
         Superior aluno1 = new Superior("joao");
         Aluno aluno2 = new Basic("joao2", 2000);
