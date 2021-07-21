@@ -46,9 +46,9 @@ public class CreditsManagementeUI {
     }
 
     private void bindColumnsToValueSource() {
-        cID.setCellValueFactory(new PropertyValueFactory<>("ID"));
-        cNome.setCellValueFactory(new PropertyValueFactory<>("Nome"));
-        cValor.setCellValueFactory(new PropertyValueFactory<>("Valor"));
+        cID.setCellValueFactory(new PropertyValueFactory<>("id"));
+        cNome.setCellValueFactory(new PropertyValueFactory<>("nome"));
+        cValor.setCellValueFactory(new PropertyValueFactory<>("valor"));
     }
 
     private void loadDataAndShow() {

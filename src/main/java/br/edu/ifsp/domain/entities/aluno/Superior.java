@@ -9,7 +9,7 @@ public class Superior extends Aluno{
     private List<Credits> credits = new ArrayList<>();
     private static Integer idSuperior = 1;
 
-    public Superior(){
+    public Superior(int id, String nome, long creditos){
 
     }
 

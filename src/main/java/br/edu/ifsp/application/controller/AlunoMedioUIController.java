@@ -29,6 +29,7 @@ public class AlunoMedioUIController {
         getEntityToView();
         if (basic.getId() == null)
             createAlunoUseCases.insert(basic);
+
         App.setRoot("AlunoMedioManagementeUI");
 
     }

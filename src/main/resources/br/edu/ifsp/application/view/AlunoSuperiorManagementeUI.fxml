@@ -4,19 +4,19 @@
 <?import javafx.scene.layout.*?>
 
 <AnchorPane prefHeight="463.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifsp.application.controller.AlunoSuperiorManagementeUI">
-   <children>
-      <TableView layoutX="12.0" layoutY="75.0" prefHeight="331.0" prefWidth="574.0">
-        <columns>
-          <TableColumn fx:id="cID" onEditStart="#cID" prefWidth="75.0" text="ID" />
-          <TableColumn fx:id="cName" onEditStart="#cName" prefWidth="75.0" text="Nome" />
-            <TableColumn fx:id="cCreditos" onEditStart="#cCreditos" prefWidth="376.0" text="Creditos" />
-        </columns>
-      </TableView>
-      <Button fx:id="btnDeletar" layoutX="477.0" layoutY="422.0" mnemonicParsing="false" onAction="#DeletarAluno" prefHeight="25.0" prefWidth="57.0" text="Deletar" />
-      <Button fx:id="btnNovo" layoutX="541.0" layoutY="422.0" mnemonicParsing="false" onAction="#novoAluno" text="Novo" />
-      <Button fx:id="btnVoltar" layoutX="14.0" layoutY="422.0" mnemonicParsing="false" onAction="#btnVoltar" text="Voltar" />
-      <Label layoutX="38.0" layoutY="39.0" text="Buscar Aluno Superior: " />
-      <TextField fx:id="txtBuscarAlunoSuperior" layoutX="162.0" layoutY="35.0" onAction="#txtBuscarAlunoSuperior" prefHeight="25.0" prefWidth="301.0" />
-      <Button fx:id="btnBuscarAlunoSuperior" layoutX="483.0" layoutY="35.0" mnemonicParsing="false" onAction="#btnBuscarAlunoSuperior" text="Buscar" />
-   </children>
+    <children>
+        <TableView fx:id="tableView" layoutX="12.0" layoutY="75.0" prefHeight="331.0" prefWidth="574.0">
+            <columns>
+                <TableColumn fx:id="cID" onEditStart="#cID" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="cNome" onEditStart="#cName" prefWidth="75.0" text="Nome" />
+                <TableColumn fx:id="cCreditos" onEditStart="#cCreditos" prefWidth="376.0" text="Creditos" />
+            </columns>
+        </TableView>
+        <Button fx:id="btnDeletar" layoutX="477.0" layoutY="422.0" mnemonicParsing="false" onAction="#DeletarAluno" prefHeight="25.0" prefWidth="57.0" text="Deletar" />
+        <Button fx:id="btnNovo" layoutX="541.0" layoutY="422.0" mnemonicParsing="false" onAction="#novoAluno" text="Novo" />
+        <Button fx:id="btnVoltar" layoutX="14.0" layoutY="422.0" mnemonicParsing="false" onAction="#btnVoltar" text="Voltar" />
+        <Label layoutX="38.0" layoutY="39.0" text="Buscar Aluno Superior: " />
+        <TextField fx:id="txtBuscarAlunoSuperior" layoutX="162.0" layoutY="35.0" onAction="#txtBuscarAlunoSuperior" prefHeight="25.0" prefWidth="301.0" />
+        <Button fx:id="btnBuscarAlunoSuperior" layoutX="483.0" layoutY="35.0" mnemonicParsing="false" onAction="#btnBuscarAlunoSuperior" text="Buscar" />
+    </children>
 </AnchorPane>

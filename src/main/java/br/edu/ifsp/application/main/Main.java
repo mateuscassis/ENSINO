@@ -4,6 +4,7 @@ import br.edu.ifsp.application.repository.inmemmory.InMemoryAlunoDAO;
 import br.edu.ifsp.application.repository.inmemmory.InMemoryCreditsDAO;
 import br.edu.ifsp.application.repository.inmemmory.InMemoryServicesDAO;
 import br.edu.ifsp.application.repository.sqlite.DatabaseBuilder;
+import br.edu.ifsp.application.view.App;
 import br.edu.ifsp.domain.usecases.aluno.*;
 import br.edu.ifsp.domain.usecases.creditos.*;
 import br.edu.ifsp.domain.usecases.servicos.*;
@@ -11,11 +12,11 @@ import br.edu.ifsp.domain.usecases.servicos.*;
 public class Main {
 
     public static CreateAlunoUseCases createAlunoUseCases;
-    private static DeleteAlunoUseCases deleteAlunoUseCases;
-    private static FindAlunoUseCases findAlunoUseCases;
+    public static DeleteAlunoUseCases deleteAlunoUseCases;
+    public static FindAlunoUseCases findAlunoUseCases;
     public static UpdateAlunoUseCase updateAlunoUseCase;
-    private static AddCreditosInAluno addCreditosInAluno;
-    private static RemoveCreditsForAluno removeCreditsForAluno;
+    public static AddCreditosInAluno addCreditosInAluno;
+    public static RemoveCreditsForAluno removeCreditsForAluno;
 
     public static CreateCreditsUseCases createCreditsUseCases;
     public static DeleteCreditsUseCases deleteCreditsUseCases;
@@ -23,13 +24,13 @@ public class Main {
     public static UpdateCreditsUseCase updateCreditsUseCase;
 
     public static CreateServicesUseCases createServicesUseCases;
-    private static DeleteServicesUseCase deleteServicesUseCase;
-    private static FindServicesUseCases findServicesUseCases;
+    public static DeleteServicesUseCase deleteServicesUseCase;
+    public static FindServicesUseCases findServicesUseCases;
     public static UpdateServiceUseCase updateServiceUseCase;
 
     public static void main(String[] args) {
         configureInjection();
-        setupDatabase();
+        App.main(args);
 
 
     }

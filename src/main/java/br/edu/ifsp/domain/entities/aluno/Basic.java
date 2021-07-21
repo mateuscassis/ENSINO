@@ -2,7 +2,6 @@ package br.edu.ifsp.domain.entities.aluno;
 
 public class Basic extends Aluno {
     private float mensalidade;
-    private static Integer idBasic = 2;
 
     public Basic() {
     }

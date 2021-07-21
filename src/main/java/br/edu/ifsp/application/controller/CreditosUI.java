@@ -52,9 +52,9 @@ public class CreditosUI {
         App.setRoot("CreditsManagementeUI");
     }
 
-    public void setCredits(Credits participant, UImode mode) {
-        if (participant == null) {
-            throw new IllegalArgumentException("Participant can not be null.");
+    public void setCredits(Credits credits, UImode mode) {
+        if (credits == null) {
+            throw new IllegalArgumentException("credits can not be null.");
         }
 
        this.credits = credits;

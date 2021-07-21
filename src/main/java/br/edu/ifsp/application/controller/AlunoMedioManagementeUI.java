@@ -11,6 +11,9 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.io.IOException;
+import java.util.List;
+import static br.edu.ifsp.application.main.Main.deleteAlunoUseCases;
+import static br.edu.ifsp.application.main.Main.findAlunoUseCases;
 
 public class AlunoMedioManagementeUI {
 
@@ -38,15 +41,15 @@ public class AlunoMedioManagementeUI {
     }
 
     private void bindColumnsToValueSource() {
-        cID.setCellValueFactory(new PropertyValueFactory<>("ID"));
+        cID.setCellValueFactory(new PropertyValueFactory<>("id"));
         cNome.setCellValueFactory(new PropertyValueFactory<>("Nome"));
         cMensalidade.setCellValueFactory(new PropertyValueFactory<>("Mensalidade"));
     }
 
     private void loadDataAndShow() {
-      //  List<Basic> basics = findAlunoUseCases.findAll();
+        List<Basic> aluno = findAlunoUseCases.findAll();
         tableData.clear();
-      //  tableData.addAll(basics);
+        tableData.setAll(aluno);
     }
 
     public void novoAluno(ActionEvent actionEvent) throws IOException {
@@ -60,7 +63,7 @@ public class AlunoMedioManagementeUI {
     public void DeletarAluno(ActionEvent actionEvent) {
         Basic selectedItem = tableView.getSelectionModel().getSelectedItem();
         if (selectedItem != null) {
-          //  deleteAlunoUseCases.remove(selectedItem);
+            deleteAlunoUseCases.remove(selectedItem);
             loadDataAndShow();
         }
     }
@@ -69,5 +72,14 @@ public class AlunoMedioManagementeUI {
     }
 
     public void btnBuscarAlunoMedio(ActionEvent actionEvent) {
+    }
+
+    public void cID(TableColumn.CellEditEvent<Basic, Integer> basicIntegerCellEditEvent) {
+    }
+
+    public void cName(TableColumn.CellEditEvent<Basic, String> basicStringCellEditEvent) {
+    }
+
+    public void cCreditos(TableColumn.CellEditEvent<Basic, Integer> basicIntegerCellEditEvent) {
     }
 }

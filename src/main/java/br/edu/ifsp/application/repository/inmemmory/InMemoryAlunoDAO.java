@@ -1,8 +1,8 @@
 package br.edu.ifsp.application.repository.inmemmory;
 
-import br.edu.ifsp.domain.entities.creditos.Credits;
 import br.edu.ifsp.domain.entities.aluno.Aluno;
 import br.edu.ifsp.domain.entities.aluno.Superior;
+import br.edu.ifsp.domain.entities.creditos.Credits;
 import br.edu.ifsp.domain.usecases.aluno.AlunoDAO;
 
 import java.util.*;
